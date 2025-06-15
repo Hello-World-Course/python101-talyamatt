@@ -1,10 +1,12 @@
-def get_user_parameters():
-    global board_size
-    global number_of_mines
+name = None
+board_size = None
+number_of_mines = None
 
-    name = None
-    board_size = None
-    number_of_mines = None
+def get_user_parameters():
+    global  name
+    global  board_size
+    global  number_of_mines
+
 
     player_name_input = input("Hello, whats your name")
 
