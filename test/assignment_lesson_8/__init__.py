@@ -7,7 +7,7 @@ def get_user_parameters():
     global board_size
     global number_of_mines
 
-    player_name_input = input("Hello, whats your name\ninput:> ")
+    player_name_input = input("Hello, whats your name")
 
     if len(player_name_input) > 2:
         name = player_name_input
@@ -15,7 +15,7 @@ def get_user_parameters():
         print("Your name is too short")
         return
 
-    board_size_input = input(f"{name}, please choose board size\ninput:> ")
+    board_size_input = input(f"{name}, please choose board size")
 
     temp_board_size = int(board_size_input)
 
@@ -25,7 +25,7 @@ def get_user_parameters():
         print(f"{name}, you have entered illegal board size")
         return
 
-    number_of_mines_input = input(f"{name}, for board size {board_size}, choose number of mines to allocate\ninput:> ")
+    number_of_mines_input = input(f"{name}, for board size {board_size}, choose number of mines to allocate")
 
     temp_number_of_mines = int(number_of_mines_input)
 
